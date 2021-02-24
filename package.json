@@ -1,0 +1,14 @@
+{
+  "name": "leos_lib",
+  "version": "1.0.0",
+  "description": "library",
+  "main": "books.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "library"
+  ],
+  "author": "Lenny_git",
+  "license": "ISC"
+}

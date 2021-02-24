@@ -1,0 +1,46 @@
+#searchButton {
+    font-size: 20px;
+    height: calc(1.3em + .75rem);
+}
+
+#addBook {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+	width: 40px;
+    position: absolute;
+    bottom: 8vh;
+    right: 8vh;
+    z-index: 20;
+    border-radius: 50%;
+}
+
+#addBook:hover {
+    animation: pulse 2s infinite;
+}
+
+.add-icon { font-size: 23px;  }
+
+.add-icon,
+#bookForm {    
+    text-align: center;
+    vertical-align: middle;  
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.9);
+		box-shadow: 0 0 0 0 rgba(33, 37, 41, 0.7);
+	}
+	
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(33, 37, 41, 0);
+	}
+	
+	100% {
+		transform: scale(0.9);
+		box-shadow: 0 0 0 0 rgba(37, 47, 58, 0);
+	}
+}
