@@ -1,6 +1,10 @@
-#searchButton {
-    font-size: 20px;
-    height: calc(1.3em + .75rem);
+.search-icon {
+    color: black;
+    font-size: 18px;
+}
+
+.book-head {
+    background-color: rgb(48, 129, 48);
 }
 
 #addBook {
@@ -31,16 +35,16 @@
 @keyframes pulse {
 	0% {
 		transform: scale(0.9);
-		box-shadow: 0 0 0 0 rgba(33, 37, 41, 0.7);
+		box-shadow: 0 0 0 0 rgba(83, 190, 83, 0.7);
 	}
 	
 	70% {
 		transform: scale(1);
-		box-shadow: 0 0 0 10px rgba(33, 37, 41, 0);
+		box-shadow: 0 0 0 10px rgba(83, 190, 83, 0);
 	}
 	
 	100% {
 		transform: scale(0.9);
-		box-shadow: 0 0 0 0 rgba(37, 47, 58, 0);
+		box-shadow: 0 0 0 0 rgba(83, 190, 83, 0);
 	}
 }
