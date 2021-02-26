@@ -64,7 +64,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title ml-4">New Book</h5>
-                    <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">&times;</button>
+                    <button type="button" class="close text-light cancel-form-modal" data-dismiss="modal" aria-label="Close">&times;</button>
                 </div>
                 <div class="modal-body">
                     <form id="book-form">
@@ -73,7 +73,7 @@
                                 <label for="title">Title</label>
                             </div>
                             <div class="col-8">
-                                <input type="text" class="form-control" id="title" placeholder="Book Title">
+                                <input type="text" class="form-control" id="form-title" placeholder="Book Title" required>
                             </div>                            
                         </div>
                         <div class="form-row align-items-center mb-3">
@@ -81,7 +81,7 @@
                                 <label for="series">Series</label>
                             </div>
                             <div class="col-8">
-                                <input type="text" class="form-control" id="series" placeholder="Book Series" value="">
+                                <input type="text" class="form-control" id="form-series" placeholder="Book Series" value="">
                             </div>                            
                         </div>
                         <div class="form-row align-items-center mb-3">
@@ -89,7 +89,7 @@
                                 <label for="author">Author</label>
                             </div>
                             <div class="col-8">
-                                <input type="text" class="form-control" id="author" placeholder="Author">
+                                <input type="text" class="form-control" id="form-author" placeholder="Author" required>
                             </div>
                         </div>
                         <div class="form-row align-items-center mb-3">
@@ -97,7 +97,19 @@
                                 <label for="pages">Pages</label>
                             </div>
                             <div class="col-8">
-                                <input type="number" class="form-control" id="pages" value="">
+                                <input type="number" class="form-control" id="form-pages" value="">
+                            </div>
+                        </div>
+                        <div class="form-row align-items-center mb-3">
+                            <div class="col-3">
+                                <label for="status">Status</label>
+                            </div>
+                            <div class="col-8">
+                                <select id="form-status" class="form-control">
+                                    <option value="read">read</option>
+                                    <option value="reading">reading</option>
+                                    <option value="unread" selected="selected">unread</option>
+                                </select>
                             </div>
                         </div>
                         <div class="form-row align-items-center">
@@ -105,7 +117,7 @@
                                 <input class="btn btn-success" type="submit" value="Submit">
                             </div>
                             <div class="col-3">
-                                <button class="btn btn-danger" type="button" data-dismiss="modal">Cancel</button>
+                                <button class="btn btn-danger cancel-form-modal" type="button" data-dismiss="modal" >Cancel</button>
                             </div>
                         </div>
                     </form>

@@ -10,5 +10,16 @@
     "library"
   ],
   "author": "Lenny_git",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "uuid": "^8.3.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lenny-of-the-cool-waters/library_manager.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lenny-of-the-cool-waters/library_manager/issues"
+  },
+  "homepage": "https://github.com/lenny-of-the-cool-waters/library_manager#readme"
 }
